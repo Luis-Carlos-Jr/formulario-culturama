@@ -113,21 +113,47 @@
                     <input type="text" name="userCity" id="userCity">
                  </fieldset>
 
-                    <!-- Hábitos: redes sociais, estilo musical, cor favorita. -->
+                <!-- Hábitos: redes sociais, estilo musical, cor favorita. -->
+                 <fieldset>
+                    <legend>Hábitos</legend>
+                    
                     <!-- Redes sociais → múltipla escolha (checkboxes) -->
+                    <p>Redes Sociais</p>
+                    <input type="checkbox" name="userSocialInstagram" id="userSocialInstagram">
+                    <label for="userSocialInstagram">Instagram</label><br>
+                    <input type="checkbox" name="userSocialFacebook" id="userSocialFacebook">
+                    <label for="userSocialFacebook">Facebook</label><br>
+                    <input type="checkbox" name="userSocialX" id="userSocialX">
+                    <label for="userSocialX">X</label><br>
+
                     <!-- Estilo musical → sugestões pré-definidas mas deve aceitar texto livre -->
+                    <label for="userMusicStyle">Estilo Musical</label>
+                    <input type="text" name="userMusicStyle" id="userMusicStyle" list="musicStyleList">
+                    <datalist id="musicStyleList">
+                        <option value="Rock">
+                        <option value="Pop">
+                        <option value="Sertanejo">
+                        <option value="Eletrônica">
+                        <option value="Classica">
+                    </datalist>
+                    <br>
+
                     <!-- Cor favorita → seletor de cor -->
+                    <label for="userColor">Cor Favorita</label>
+                    <input type="color" name="userColor" id="userColor">
+                 </fieldset>
+                
 
-                    <!-- Opinião: escala de satisfação + comentário aberto. -->
-                    <!-- Satisfação → escolha única (ótima, boa, regular, ruim) -->
-                    <!-- Comentário → campo aberto com placeholder -->
+                <!-- Opinião: escala de satisfação + comentário aberto. -->
+                <!-- Satisfação → escolha única (ótima, boa, regular, ruim) -->
+                <!-- Comentário → campo aberto com placeholder -->
 
-                    <!-- Confirmações: consentimento obrigatório (LGPD) + opção de receber resultados. -->
-                    <!-- Consentimento LGPD → checkbox obrigatório -->
-                    <!-- Receber resultados por e-mail → opcional -->
+                <!-- Confirmações: consentimento obrigatório (LGPD) + opção de receber resultados. -->
+                <!-- Consentimento LGPD → checkbox obrigatório -->
+                <!-- Receber resultados por e-mail → opcional -->
 
-                    <!-- Botões: enviar e limpar. -->
-                    <button type="submit">Enviar</button>
+                <!-- Botões: enviar e limpar. -->
+                <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
