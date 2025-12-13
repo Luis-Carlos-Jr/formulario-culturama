@@ -116,7 +116,7 @@
                 <!-- Hábitos: redes sociais, estilo musical, cor favorita. -->
                  <fieldset>
                     <legend>Hábitos</legend>
-                    
+
                     <!-- Redes sociais → múltipla escolha (checkboxes) -->
                     <p>Redes Sociais</p>
                     <input type="checkbox" name="userSocialInstagram" id="userSocialInstagram">
@@ -145,9 +145,28 @@
                 
 
                 <!-- Opinião: escala de satisfação + comentário aberto. -->
-                <!-- Satisfação → escolha única (ótima, boa, regular, ruim) -->
-                <!-- Comentário → campo aberto com placeholder -->
+                <fieldset>
+                    <legend>Opinião</legend>
 
+                    <!-- Satisfação → escolha única (ótima, boa, regular, ruim) -->
+                    <p>Pesquisa de Satisfação</p>
+                    <input type="radio" name="userSatisfection" id="satisfectionGreat">
+                    <label for="satisfectionGreat">Ótimo</label><br>
+
+                    <input type="radio" name="userSatisfection" id="satisfectionGood">
+                    <label for="satisfectionGood">Bom</label><br>
+
+                    <input type="radio" name="userSatisfection" id="satisfectionAverage">
+                    <label for="satisfectionAverage">Normal</label><br>
+
+                    <input type="radio" name="userSatisfection" id="satisfectionPoor">
+                    <label for="satisfectionPoor">Ruim</label><br>
+
+                    <!-- Comentário → campo aberto com placeholder -->
+                    <label for="userComments">Comentários</label>
+                    <textarea name="userComments" id="userComments" placeholder="Sua opiniãoé muito importante para nós.."></textarea>
+                </fieldset>
+                
                 <!-- Confirmações: consentimento obrigatório (LGPD) + opção de receber resultados. -->
                 <!-- Consentimento LGPD → checkbox obrigatório -->
                 <!-- Receber resultados por e-mail → opcional -->
