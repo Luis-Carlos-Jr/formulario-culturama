@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "FjallaOne";
+    src: url(../fonts/FjallaOne-Regular.ttf) format("truetype");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "WorkSans";
+    src: url(../fonts/WorkSans-VariableFont_wght.ttf) format("truetype");
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
