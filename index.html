@@ -157,7 +157,7 @@
                     <label for="satisfectionGood">Bom</label><br>
 
                     <input type="radio" name="userSatisfection" id="satisfectionAverage">
-                    <label for="satisfectionAverage">Normal</label><br>
+                    <label for="satisfectionAverage">Regular</label><br>
 
                     <input type="radio" name="userSatisfection" id="satisfectionPoor">
                     <label for="satisfectionPoor">Ruim</label><br>
@@ -168,8 +168,17 @@
                 </fieldset>
                 
                 <!-- Confirmações: consentimento obrigatório (LGPD) + opção de receber resultados. -->
+                <fieldset>
+                    <legend>Confirmações</legend>
+
                 <!-- Consentimento LGPD → checkbox obrigatório -->
+                <input type="radio" name="userLGDP" id="userLGDP" required>
+                <label for="userLGDP">Aceito particioar da parquisa de opinião</label><br>
+
                 <!-- Receber resultados por e-mail → opcional -->
+                <input type="radio" name="userAccept" id="userAccept">
+                <label for="userAccept">Desejo receber o resultado da pesquisa por e-mail</label>
+                </fieldset>
 
                 <!-- Botões: enviar e limpar. -->
                 <button type="submit">Enviar</button>
