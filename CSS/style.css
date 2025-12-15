@@ -33,7 +33,7 @@ main{
     width: 100%;
     max-width: 700px;
     margin: 20px auto;
-    background-color: #f9f9f9;
+    background-color: #eeeded;
     border: 1px solid #cccccc;
     border-radius: 10px;
     padding: 10px;
@@ -72,6 +72,14 @@ textarea{
     margin-top: 5px;
 }
 
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: none;
+    border: 2px solid #007BFF;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
 input[type='checkbox'],[type='radio']{
     width: auto;
 }
@@ -79,6 +87,18 @@ input[type='checkbox'],[type='radio']{
 input[type="color"]{
     width: 30px;
     padding: 0;
+}
+
+input:invalid,select:invalid{
+    outline: none;
+    border: 1px solid red;
+    box-shadow: 0 0 0 1px rgba(255, 0, 0, 0.301);
+}
+
+input:valid:required,select:valid:required{
+    outline: none;
+    border: 1px solid green;
+    box-shadow: 0 0 0 1px rgba(0, 128, 0, 0.267);
 }
 
 select{
@@ -89,4 +109,40 @@ select{
 p{
     font-weight: 600;
     margin-bottom: 10px;
+}
+
+button{
+    width: 50px;
+    height: 30px;
+    margin: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    background-color: green;
+    color: #ffffff;
+}
+
+button[type="reset"]:hover{
+    background-color: red;
+    color: #ffffff;
+}
+
+input[type="checkbox"]:required:not(:checked){
+    color: red;
+    outline: 1px solid red;
+    outline-offset: 1px;
+}
+
+input[type="checkbox"]:required:not(:checked) + label {
+    color: red;
+}
+
+input[type="checkbox"]:required:checked{
+    outline: 1px solid green;
+    outline-offset: 1px;
+}
+
+input[type="checkbox"]:required:checked + label {
+    color: green;
 }

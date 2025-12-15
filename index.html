@@ -37,7 +37,7 @@
 
                     <!-- E-mail → obrigatório, precisa validar formato -->
                     <label for="userEmail">E-Mail</label>
-                    <input type="email" name="userEmail" id="userEmail">
+                    <input type="email" name="userEmail" id="userEmail" required>
                     <br>
 
                     <!-- Telefone → opcional, deve ter 11 dígitos -->
@@ -175,11 +175,11 @@
                     <legend>Confirmações</legend>
 
                 <!-- Consentimento LGPD → checkbox obrigatório -->
-                <input type="radio" name="userLGDP" id="userLGDP" required>
+                <input type="checkbox" name="userLGDP" id="userLGDP" required>
                 <label for="userLGDP">Aceito participar da parquisa de opinião</label><br>
 
                 <!-- Receber resultados por e-mail → opcional -->
-                <input type="radio" name="userAccept" id="userAccept">
+                <input type="checkbox" name="userAccept" id="userAccept">
                 <label for="userAccept">Desejo receber o resultado da pesquisa por e-mail</label>
                 </fieldset>
 
