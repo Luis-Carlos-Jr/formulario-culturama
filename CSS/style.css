@@ -105,6 +105,15 @@ input:valid:required,select:valid:required{
     box-shadow: 0 0 0 1px rgba(0, 128, 0, 0.267);
 }
 
+input[type='tel'],[type='file']{
+    margin: 0;
+}
+
+small{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
 select{
     margin: 15px 0;
     padding: 0;

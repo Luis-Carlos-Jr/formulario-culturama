@@ -47,12 +47,14 @@
                     name="userPhoneNumber" 
                     id="userPhoneNumber" 
                     pattern="[0-9]{11}" 
-                    placeholder="DDD+Número">
+                    aria-describedby="telHelp">
+                    <small id="telHelp">Preecha com 11 dígitos, no formato DDD+número</small>
                     <br>
 
                     <!-- Upload de foto → opcional -->
                     <label for="userImage">Foto</label>
                     <input type="file" name="userImage" id="userImage" accept="image/*">
+                    <small>Envie uma foto sua em qualquer formato</small>
                     
                  </fieldset>
 
@@ -184,8 +186,8 @@
                 </fieldset>
 
                 <!-- Botões: enviar e limpar. -->
-                <button type="submit">Enviar</button>
-                <button type="reset">Limpar</button>
+                <button type="submit" aria-label="Enviar os dados do formulario">Enviar</button>
+                <button type="reset" aria-label="Limpar os dados do formulario">Limpar</button>
             </form>
         </section>
     </main>
